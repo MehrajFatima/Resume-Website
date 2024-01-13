@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ayesha Resume</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            line-height: 2;
+            /* font-size:20px; */
+            letter-spacing: 0.5;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        p{
+            font-size: 20px;
+        }
+       
+        .container{
+            padding: 8px;
+            margin: 17px 8px;
+            background-color: lightcyan;
+        }
+        td{
+            padding: 10px;
+        }
+        .my_pic img{
+            border: 5px solid black;
+            transition: all 200ms linear;
+            border-radius: 5px;
+        }
+        .my_pic img:hover{
+            width: 500px;
+            cursor: pointer;
+        }
+        .my_pic {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /* letter-spacing: 1px; */
+        }
+        td.my_pic{
+            position: relative;
+            left: 200px;
+        }
+        .edu table ,thead{
+            width: 60%;
+            border: 2px solid black;
+            font-size: large;
+            text-align: center;
+            letter-spacing: 2px;
+            margin-left: 300px;
+        }
+       
+    footer p{
+        text-align: center;
+        font-weight: 800;
+        color: black;
+        
+    }
+    .intern{
+        display: flex;
+        justify-content: space-around;
+        /* border: 2px solid red; */
+    }
+    .content{
+            height: 100%;
+            width: 50%;
+            /* border: 2px solid blue; */
+    }
+    .intern_image{
+
+        height: 350px;
+        width: calc(100% - 70%);
+        background-size: cover;
+        background-color: transparent;
+        /* border: 2px solid black; */
+    }
+    .intern_image img{
+        height: 100%;
+        width: 100%;
+        transition: all 200ms linear;
+        border-radius: 5px;
+
+    }
+    .intern_image img:hover{
+        width: 500px;
+        cursor: pointer;
+    }
+    h2{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+        text-decoration: underline;
+    }
+    .project{
+        margin: 50px;
+    }
+    .fot{
+        display: flex;
+        justify-content: space-evenly;
+        width: 20%;
+        height: 50px;
+        border: 5px solid rgba(128, 128, 128, 0.56);
+        margin-left: 600px;
+        border-radius: 10px;
+        /* background-color: black; */
+        padding: 5px;
+
+    } 
+    .fot img{
+        height: 30px;
+        width: 30px;
+    }
+    h3{
+        text-align: center;
+    }
+    h1{
+        text-shadow: 1px 1px black;
+    }
+    #para{
+        font-size: small;
+        font-weight: bold;
+    }
+   
+       
+        
+    </style>
+</head>
+<body class="container">
+<div class="my_pic">
+<table >
+    <td>
+        <img src="Mypic.jpeg" width = "300"alt="Photo" >
+    </td>
+    <td class="my_pic">
+        <h1>Mehraj Fatima</h1>
+        <p><i>Student of Computer Science & Engineering</i>👩🏽‍🎓</p>
+        <p id="para">I am an ambitious and dedicated Computer Science Engineering student with a strong passion for programming and technology.
+             </p>
+    </td>
+</table>
+</div>
+
+    
+    
+    
+<hr>
+    <!-- Header ends -->
+<div class="edu">
+    <h2 class="edu">Education Qualification</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Institute</th>
+                <th>Year</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>B.E - CSE</td>
+                    <td>MVSR Engineering College</td>
+                    <td>2020-2024</td>
+                    <td>9.0 CGPA</td>
+                </tr>
+                <tr>
+                    <td>INTER - MPC</td>
+                    <td>Sri Gayatri Junior College</td>
+                    <td>2018-2020</td>
+                    <td>93%</td>
+                </tr>
+                <tr>
+                    <td>SSC</td>
+                    <td>Loyola Model High School</td>
+                    <td>2004-2020</td>
+                    <td>85%</td>
+                </tr>
+        </tbody>
+    </table>
+</div>
+    <hr>
+
+    <!-- Internship -->
+    <h2>Internships</h2>
+    <div class="intern">
+    <div class="content">
+    <p><b>Web Development Internship at Oasis</b></p>
+    <ul>
+        <li><p>Utilized HTML, CSS, and JavaScript to implement front-end designs and interactive features.</p></li>
+        <ul>
+            <li><p><strong>Landing Page </strong></p></li>
+            <li><p><strong>My Portfolio </strong></p></li>
+            <li><p><strong>Temparature Converter </strong></p></li>
+        </ul>
+    </ul>
+    
+    <p><b>Technical Teaching Assistant at Suntek Corp. Pvt. Ltd </b></p>
+    <ul>
+        <li><p>It was a really good experience, helping students with their doubts in DSA.</p></li>
+        <li><p>It helped me also to improve my problem solving skills and revising my concepts</p></li>
+    </ul>
+    </div>
+    <div class="intern_image">
+        <!-- <p>image is loading</p> -->
+        <img src="internship.jpg" alt="">
+    </div>
+    
+</div>
+<hr>
+
+
+    <!-- project -->
+    <div class="project">
+    <h2>Projects</h2>
+    <p><b>Timetable Management System - Web Development</b></p>
+    <ul>
+        <li><p>Developed a Timetable Management System as a mini-project, leveraging React.js for the frontend,Node.js for the backend, and MySQL database for data storage</p></li>
+        <li><p>Created an intuitive and responsive user interface using React.js, allowing users to dynamically access data</p></li>
+    </ul>
+    <p><b>Mineral Processing Technology - Image Analytics</b></p>
+    <ul>
+        <li><p>Analysed mineral particles and calculated following </p></li>
+        <li><p>The smallest circle that just encapsulates the particle (the circle has to be generated on the image).
+        </p></li>
+        <li><p>Total surface area of the particle (in pixels) (Has to be generated on the image)</p>
+        </li>
+        <li><p>The major axis (longest axis) in the particle that lies entirely inside the particle (in pixels) (Has to be generated on the image)</p>
+        </li>
+        <li><p>Total perimeter of the particle (in pixels) (Has to be generated on the image)</p>
+        </li>
+        <li><p>Centroid of the particle (Has to be generated on the image)</p>
+        </li>
+    </ul>
+</div>
+<hr>
+<footer>
+<h3>Connect With Me!</h3>
+
+<div class="fot">
+    <a href="https://github.com/MehrajFatima"><img src="github.svg" alt="Github"></a><a href="https://www.linkedin.com/in/mehraj-fatima-5a9b301ab/"><img src="linkedin.svg" alt=""></a><a href="mehrajfatima44802@gmail.com"><img src="email-alt.svg" alt="Email"></a>
+    
+</div>
+
+
+</footer>   
+</body>
+</html>
