@@ -19,15 +19,16 @@
         .container{
             padding: 8px;
             margin: 17px 8px;
-            background-color: rgba(132, 239, 239, 0.688);
+            background-color: rgba(145, 209, 209, 0.425);
         }
         td{
             padding: 10px;
         }
         .my_pic img{
-            border: 5px solid black;
             transition: all 200ms linear;
             border-radius: 5px;
+            clip-path: circle(45% at 50% 50%);
+            /* border: 5px solid black; */
         }
         .my_pic img:hover{
             width: 500px;
@@ -36,11 +37,13 @@
         .my_pic {
             text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
             /* letter-spacing: 1px; */
         }
         td.my_pic{
             position: relative;
-            left: 200px;
+            left: 100px;
+            
         }
         .edu table ,thead{
             width: 60%;
